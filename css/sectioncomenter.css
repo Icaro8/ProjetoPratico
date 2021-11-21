@@ -1,0 +1,38 @@
+.comentsbox{
+    width: 250px;
+    height: 250px;
+    background-color: #ddd;
+    margin:auto;
+    border-radius: 5px;
+}
+.secetioncoments{
+    display:flex;
+    margin: 40px auto
+}
+.comentsbox{
+    text-align: center;
+}
+.comentsbox h1{
+    font-family: 'Fira Code';
+    letter-spacing: 1px;
+    text-align: center;
+}
+.comentsbox:hover{
+    transform: scale(1.2);
+}
+.titlecomments{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Fira Code';
+    color:#fff;
+    background-color: #3b3b3b;
+}
+.titlecomments h3::before{
+    content:'|';
+    margin-right: 10px;
+}
+.titlecomments h3::after{
+    content:'|';
+    margin-left: 10px;
+}
+ 

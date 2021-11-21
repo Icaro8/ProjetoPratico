@@ -1,0 +1,12 @@
+.btnAparecer{
+    display: block;
+    margin:20px auto;
+    height: 28px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: grey;
+
+}
+.btnAparecer:focus{
+    background-color: honeydew;
+}

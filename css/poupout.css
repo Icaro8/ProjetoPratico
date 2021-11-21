@@ -1,0 +1,77 @@
+/*font-family: 'Chakra Petch', sans-serif;
+font-family: 'Press Start 2P', cursive;*/
+:root{
+    --font-family_chakra: 'Chakra Petch';
+    --font-family_press :'Press Start 2P'
+}
+.popoutFullScreen{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0, .5);   
+    position: fixed;
+    top:0;
+    left: 0;
+    display: none;
+}
+.mostrar{display: block;}
+.contenttext{
+    margin: 250px auto;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: var(--font-family_press);
+    letter-spacing: 1px;
+    width: 40%;
+    background-color: rgba(34, 32, 32, 0.759);
+    box-shadow: 0 0 15px #fff;
+    position: relative;
+    animation: animacaoPop .6s;
+    
+}
+.contenttext p{
+    padding: 20px;
+}
+.contenttext p::after{
+    content: '.';
+     animation: pisca .8s infinite;
+}
+/*Animação cursor*/
+@keyframes pisca {
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+.btnsair{
+    padding: 5px;
+    font-size: 15px;
+    font-family:'Press Start 2P' ;
+    background-color:rgba(117, 111, 111, 0.759);
+    position: absolute;
+    top:-30px;
+    right: -20px;
+    border-radius: 0 10px 0 10px;
+    cursor: pointer;
+    border: 2px solid rgba(187, 183, 183, 0.705);
+    box-shadow: 0 0 0 3px #ddd
+}
+.btnsair:hover{
+    transform: scale(1.2);
+}
+
+.mostrar{
+    display: block;
+}
+
+@keyframes animacaoPop {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -120px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
